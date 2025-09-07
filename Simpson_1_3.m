@@ -27,3 +27,8 @@ for i = 1:n-1
         sum1 = sum1 + f(x);  % odd index terms
     end
 end
+
+
+I = (h/3) * (f(a) + f(b) + 4*sum1 + 2*sum2);
+
+fprintf('The value of the integral is: %.4f\n', I);
