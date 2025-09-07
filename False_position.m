@@ -15,7 +15,7 @@ for k=1:100;
     else
         a=x(k);
     end
-    x(k+1) = a-(f(a)*(b-a)/f(b)-f(a));
+    x(k+1) = a - (f(a)*(b-a))/(f(b)-f(a));
     s = ((abs(x(k+a)-x(k)))/abs(x(k+1)))*100;
     if s<=.01
         break
