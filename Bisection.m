@@ -9,7 +9,7 @@ fprintf('N\t \ta\t\t b\t\t x\t\t f(x)\t\t Error\n');
 for k=1:100;
 x(k)=(a+b)/2;
 c=f(x(k));
-fprintf('%g %f %f %f %f %f\n',k,a,b,x(k),c,s);
+fprintf('%g\t %f\t %f\t %f\t %f\t %f\n',k,a,b,x(k),c,s);
 if c>0
 b=x(k);
 else
